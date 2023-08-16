@@ -1,5 +1,3 @@
-![logo henry](https://github.com/MartiPeker/PIAnalisisCripto/assets/83708254/0326fcf3-2de4-46a0-8934-2f70c67291c1)
-
 # Análisis Exploratorio de Datos (EDA) de Criptomonedas
 
 En este análisis, explore en profundidad las tendencias, fluctuaciones y patrones en los mercados de Bitcoin, Ethereum, Matic y XRP. Con una combinacion de investigacion en linea,
