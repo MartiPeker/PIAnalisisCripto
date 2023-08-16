@@ -11,7 +11,6 @@ import random
 # -------------------------------
 
 def get_graph_by_interval(interval, symbol):
-   st.title("Precio de Bitcoin")
 
    #precio de btc en base a un intervalo de fechas:
    start_date = st.date_input("desde", pd.to_datetime('2018-01-01'), key=random.randint(0,9999999))
@@ -88,6 +87,7 @@ st.title('Analisis [ Mundo Cripto ]')
 
 bitcoin, ethereum, matic, xrp = st.tabs(["Bitcoin", "Ethereum", "Matic/Polygon", "Xrp/Riple"])
 with bitcoin:
+    st.title("Precio de Bitcoin")
     symbol = 'BTCUSDT'
     montly, weekly, daily = st.tabs(['M', 'W', 'D'])
     with montly:
@@ -101,6 +101,7 @@ with bitcoin:
 
 
 with ethereum:
+    st.title("Precio de Ethereum")
     symbol = 'ETHUSDT'
     montly, weekly, daily = st.tabs(['M', 'W', 'D'])
     with montly:
@@ -113,6 +114,7 @@ with ethereum:
       get_graph_by_interval(Client.KLINE_INTERVAL_1DAY, symbol)
 
 with matic:
+    st.title("Precio de Matic")
     symbol = 'MATICUSDT'
     montly, weekly, daily = st.tabs(['M', 'W', 'D'])
     with montly:
@@ -125,6 +127,7 @@ with matic:
       get_graph_by_interval(Client.KLINE_INTERVAL_1DAY, symbol)
 
 with xrp:
+    st.title("Precio de XRP")
     symbol = 'XRPUSDT'
     montly, weekly, daily = st.tabs(['M', 'W', 'D'])
     with montly:
